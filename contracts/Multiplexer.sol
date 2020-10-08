@@ -8,7 +8,7 @@ import './ERC20.sol';
 
 contract Multiplexer {
 
-	function sendEth(address[] _to, uint256[] _value) payable returns (bool _success) {
+	function sendEth(address[] _to, uint256[] _value) payable public returns (bool _success) {
 		// input validation
 		assert(_to.length == _value.length);
 		assert(_to.length <= 255);
@@ -28,7 +28,7 @@ contract Multiplexer {
 		return true;
 	}
 
-	function sendErc20(address _tokenAddress, address[] _to, uint256[] _value) returns (bool _success) {
+	function sendErc20(address _tokenAddress, address[] _to, uint256[] _value) public returns (bool _success) {
 		// input validation
 		assert(_to.length == _value.length);
 		assert(_to.length <= 255);

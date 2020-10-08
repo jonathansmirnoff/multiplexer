@@ -4,10 +4,10 @@
   "description": "Contract for sending ETH or ERC20 to multiple addresses in one transaction",
   "scripts": {
     "test": "truffle test",
-    "script": "RUN_SCRIPT='true' truffle test ./test/RunScriptWithWorkingWeb3.js --network mainnet"
+    "script": "RUN_SCRIPT='true' truffle test ./test/RunScriptWithWorkingWeb3.js --network testnet"
   },
   "devDependencies": {
-    "@digix/truffle-lightwallet-provider": "^0.1.2",
+    "@truffle/hdwallet-provider": "^1.1.0",
     "awaiting": "^3.0.0",
     "babel-eslint": "^7.2.3",
     "babel-preset-env": "^1.6.0",
